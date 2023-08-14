@@ -9,7 +9,11 @@
         <label for="password">Password: </label>
         <input type="password" name="signinPassword" id="password">
 
-        <button type="submit" value="Sign In"> Sign In </button>
+        <?php
+        $signIn = FormController::ctrSignIn();
+        ?>
+
+        <input type="submit" value="Sign In">
     </form>
 </body>
 </html>
