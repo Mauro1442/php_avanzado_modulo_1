@@ -3,8 +3,6 @@
 class FormController
 {
 
-    /*-------------Sign in---------------*/
-
     static public function ctrSignIn()
     {
         if (isset($_POST["signinName"])) {
@@ -21,4 +19,4 @@ class FormController
         }
     }
 }
-
+?>

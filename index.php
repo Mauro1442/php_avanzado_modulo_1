@@ -12,3 +12,4 @@ $template = new ViewController();
 //Get the method
 
 $template -> ctrGetView();
+?>

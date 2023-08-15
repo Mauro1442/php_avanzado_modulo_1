@@ -12,9 +12,27 @@
         <input type="password" name="signinPassword" id="password" class="">
 
         <?php
-        $signIn = FormController::ctrSignIn();
+
+        try 
+        {    
+            $signIn = FormController::ctrSignIn();
+            if ($signIn == "ok") 
+            {
+                echo '<script>
+                if (window.history.replaceState) {
+                    window.history.replaceState(null, null, window.location.href);
+                }
+                </script>';
+                echo '<div class="alert alert-success">User created</div>';
+            }
+        } 
+        catch (Exception $e) 
+        {
+            echo '<div class="alert alert-danger">' . $e->getMessage() . '</div>';
+        }
         ?>
 
         <input type="submit" value="send" class="send">
     </form>
 </div>
+

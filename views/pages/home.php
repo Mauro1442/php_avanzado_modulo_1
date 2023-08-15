@@ -4,6 +4,3 @@
         Model View Controller (MVC). <br> Hopefully we will also build api routes to make the same operations through 
     a different front end applicaion. We could even display your real name in the header! <br>
     See you here in one month when the course resumes. Have a nice day Username! </p>
-
-    </body>
-    </html>
