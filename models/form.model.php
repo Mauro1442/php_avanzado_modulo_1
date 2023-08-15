@@ -27,7 +27,7 @@ class FormModel
 
     static public function mdlSelectUser($table, $item, $value)
     {
-        if ($item != null && $value != null) {
+        if ($item == null && $value == null) {
             $stmt = Connection::connect()->prepare("SELECT *, DATE_FORMAT(created, '%d/%m/%Y') AS created FROM $table ORDER BY id DESC");
             $stmt->execute();
             return $stmt->fetchAll();
