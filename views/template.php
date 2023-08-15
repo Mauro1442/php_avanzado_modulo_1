@@ -7,9 +7,10 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= stylesheet href="./public/css/styles.css">
-    <title>Document</title>
+    <title>PHP & SQL</title>
 </head>
 <body>
     <div id="container" >
@@ -33,6 +34,7 @@ session_start();
                     $_GET["route"] == "signin" ||
                     $_GET["route"] == "login" ||
                     $_GET["route"] == "home" ||
+                    $_GET["route"] == "edit" ||
                     $_GET["route"] == "logout" ) {
                         include "pages/".$_GET["route"].".php";
                 } else {

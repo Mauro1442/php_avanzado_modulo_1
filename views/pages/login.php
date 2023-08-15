@@ -1,11 +1,22 @@
+<div>
+
 <h1 class = "pageTitle">Login</h1>
 
-    <form action="" method="post">
+    <form class="" method="post">
 
         <label for="email">Email: </label>
-        <input type="text" name="loginEmail" id="email">
+        <input type="email" name="loginEmail" id="email" class="">
         <label for="password">Password: </label>
-        <input type="password" name="loginPassword" id="password">
+        <input type="password" name="loginPassword" id="password" class="">
 
-        <input type="submit" value="Log In">
+
+		<?php 
+
+		$login = new FormController();
+		$login -> ctrLogin();
+
+		?>
+
+        <button type="submit" class="">Log In</button>
     </form>
+</div>
