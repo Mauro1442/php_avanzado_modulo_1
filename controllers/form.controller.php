@@ -8,7 +8,9 @@ class FormController
     static public function ctrSignIn()
     {
         if (isset($_POST["signinName"])) {
+
             $table = "registered";
+
             $data = array(
                 "name" => $_POST["signinName"],
                 "email" => $_POST["signinEmail"],
@@ -19,3 +21,4 @@ class FormController
         }
     }
 }
+

@@ -1,4 +1,5 @@
 <?php
+
 require_once "connection.php";
 
 class FormModel
@@ -13,6 +14,7 @@ class FormModel
             return "ok";
         } else {
             print_r(Connection::connect()->errorInfo());
+            print_r($stmt->errorInfo());
         }
         $stmt->closeCursor();
         $stmt = null;

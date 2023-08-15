@@ -8,4 +8,3 @@ class Connection
         return $link;
     }
 }
-?>
