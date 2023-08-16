@@ -54,6 +54,7 @@ class FormModel
     static public function mdlUpdateUser($table, $data)
     {
         $stmt = Connection::connect()->prepare("UPDATE $table SET name = :name, email = :email, password = :password WHERE id = :id");
+        
         $stmt->bindParam(":id", $data["id"], PDO::PARAM_INT);
         $stmt->bindParam(":name", $data["name"], PDO::PARAM_STR);
         $stmt->bindParam(":email", $data["email"], PDO::PARAM_STR);

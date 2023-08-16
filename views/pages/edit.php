@@ -13,7 +13,7 @@ if (isset($_GET['id'])) {
         <input type="email" value="<?php echo $user['email']; ?>" id="email" placeholder="Email" name="updateEmail">
         <input type="password" id="password" placeholder="Password" name="updatePassword">
         <input type="hidden" value="<?php echo $user['password']; ?>" name="currentPassword">
-        <input type="hidden" value="<?php echo $user['id']; ?>" name="id">
+        <input type="hidden" value="<?php echo $user['id']; ?>" name="idUser">
         <?php
         $updateUser = FormController::ctrUpdateUser();
         if ($updateUser == "ok") {

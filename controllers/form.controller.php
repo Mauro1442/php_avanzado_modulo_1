@@ -86,7 +86,7 @@ class FormController
             $table = "registered";
 
             $data = array(
-                "id" => $_POST["id"],
+                "id" => $_POST["idUser"],
                 "name" => $_POST["updateName"],
                 "email" => $_POST["updateEmail"],
                 "password" => $password
